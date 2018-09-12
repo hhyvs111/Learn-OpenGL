@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD 14)
     set(GLFW_LINK /usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.dylib)
     link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 # 执行编译命令
+
 #"src/1.start/1.1.helloWindow/helloWindow.cpp"
-set(SOURCE_FILES "src/glad.c" src/1.start/1.3.shader/shader_class.cpp)
+set(SOURCE_FILES "src/glad.c" "includes/LearnOpenGL/stb_image.h" src/paper.cpp)
 add_executable(Learn-OpenGL ${SOURCE_FILES})
